@@ -25,10 +25,6 @@ python3 -m pip install webdriver-manager --upgrade
 python3 -m pip install packaging
 ```
 
-```sh
-python run.py test ExportCalendarSuite
-```
-
 > Test export calendar
 
 ```sh
