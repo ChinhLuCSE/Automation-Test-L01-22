@@ -17,6 +17,18 @@ pip install -r ./requirements.txt
 
 Go to `src` folder and run the following commands
 
+> Install webdriver package
+
+```sh
+python3 -m pip install webdriver-manager --upgrade
+
+python3 -m pip install packaging
+```
+
+```sh
+python run.py test ExportCalendarSuite
+```
+
 > Test export calendar
 
 ```sh
