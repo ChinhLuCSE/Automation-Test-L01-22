@@ -274,3 +274,36 @@ class TestEditProfile:
         driver.find_element(By.ID, "id_lastname").clear()
         driver.find_element(By.ID, "id_lastname").send_keys("Gardner")
         driver.find_element(By.ID, "id_submitbutton").click()
+
+#Author: Bui Ngoc Thanh Son
+class TestForumPost:
+    @staticmethod
+    def testCreatePost(username, password, title, content, expect):
+        TestForumPost.createPost(username, password, title, content)
+        return TestForumPost.check(expect)
+
+    @staticmethod
+    def check(expect):
+        result = driver.find_element(By.CSS_SELECTOR, "#user-notification p").text
+        return result == expect
+    
+    @staticmethod
+    def createPost(username, password, title, content):
+        try:
+            driver.get("https://school.moodledemo.net/login/index.php")
+            driver.find_element(By.ID, "username").clear()
+            driver.find_element(By.ID, "username").send_keys(username)
+            driver.find_element(By.ID, "password").clear()
+            driver.find_element(By.ID, "password").send_keys(password)
+            driver.find_element(By.ID, "loginbtn").click()
+        except Exception:
+            pass
+
+        driver.get("https://school.moodledemo.net/mod/forum/view.php?id=944")
+        driver.find_element(By.XPATH, "//a[@href='#collapseAddForm']").click()
+        driver.find_element(By.ID, "id_subject").clear()
+        driver.find_element(By.ID, "id_subject").send_keys(title)
+        driver.switch_to.frame(driver.find_element(By.ID, "id_message_ifr"))
+        driver.find_element(By.CSS_SELECTOR, "#timymce p").clear()
+        driver.find_element(By.CSS_SELECTOR, "#timymce p").send_keys(content)
+        driver.find_element(By.ID, "id_submitbutton").click()

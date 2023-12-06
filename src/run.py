@@ -17,6 +17,12 @@ def main(argv):
         elif argv[1] == "ExportCalendarSuite":
             from ExportCalendarSuite import ExportCalendarSuite
             getAndTest(ExportCalendarSuite)
+        elif argv[1] == "EditProfileSuite":
+            from EditProfileSuite import EditProfileSuite
+            getAndTest(EditProfileSuite)
+        elif argv[1] == "ForumPostSuite":
+            from ForumPostSuite import ForumPostSuite
+            getAndTest(ForumPostSuite)
         else:
             printUsage()
     else:
@@ -45,6 +51,7 @@ def test(suite):
 def printUsage():
     print("python3 run.py test LoginSuite")
     print("python3 run.py test ChangePasswordSuite")
+    print("python3 run.py test EditProfileSuite")
 
 
 if __name__ == "__main__":
