@@ -200,3 +200,77 @@ time_period: %s
         dest.write("Required")
         driver.get(url)
         driver.refresh()
+
+#Author: Bui Ngoc Thanh Son - 1712961
+class TestEditProfile:
+    @staticmethod
+    def testEditSubmit(username, password, firstname, lastname, expect):
+        TestEditProfile.submitEditProfile(username, password, firstname, lastname)
+        check = TestEditProfile.check(expect)
+        TestEditProfile.resetProfile()
+
+        return check
+    
+    @staticmethod
+    def testEditCancel(username, password, firstname, lastname, expect):
+        TestEditProfile.cancelEditProfile(username, password, firstname, lastname)
+        check = TestEditProfile.check(expect)
+        TestEditProfile.resetProfile()
+
+        return check
+    
+    @staticmethod
+    def check(expect):
+        driver.get("https://school.moodledemo.net/user/profile.php")
+        result = driver.find_element(By.CSS_SELECTOR, "#page h1").text
+        return result == expect
+    
+    @staticmethod
+    def submitEditProfile(username, password, firstname, lastname):
+        try:
+            driver.get("https://school.moodledemo.net/login/index.php")
+            driver.find_element(By.ID, "username").clear()
+            driver.find_element(By.ID, "username").send_keys(username)
+            driver.find_element(By.ID, "password").clear()
+            driver.find_element(By.ID, "password").send_keys(password)
+            driver.find_element(By.ID, "loginbtn").click()
+        except Exception:
+            pass
+
+        driver.get("https://school.moodledemo.net/user/profile.php")
+        driver.find_element(By.XPATH, "//a[@href='https://school.moodledemo.net/user/edit.php?id=56&returnto=profile']").click()
+        driver.find_element(By.ID, "id_firstname").clear()
+        driver.find_element(By.ID, "id_firstname").send_keys(firstname)
+        driver.find_element(By.ID, "id_lastname").clear()
+        driver.find_element(By.ID, "id_lastname").send_keys(lastname)
+        driver.find_element(By.ID, "id_submitbutton").click()
+
+    @staticmethod
+    def cancelEditProfile(username, password, firstname, lastname):
+        try:
+            driver.get("https://school.moodledemo.net/login/index.php")
+            driver.find_element(By.ID, "username").clear()
+            driver.find_element(By.ID, "username").send_keys(username)
+            driver.find_element(By.ID, "password").clear()
+            driver.find_element(By.ID, "password").send_keys(password)
+            driver.find_element(By.ID, "loginbtn").click()
+        except Exception:
+            pass
+
+        driver.get("https://school.moodledemo.net/user/profile.php")
+        driver.find_element(By.XPATH, "//a[@href='https://school.moodledemo.net/user/edit.php?id=56&returnto=profile']").click()
+        driver.find_element(By.ID, "id_firstname").clear()
+        driver.find_element(By.ID, "id_firstname").send_keys(firstname)
+        driver.find_element(By.ID, "id_lastname").clear()
+        driver.find_element(By.ID, "id_lastname").send_keys(lastname)
+        driver.find_element(By.ID, "id_cancel").click()
+
+    @staticmethod
+    def resetProfile():
+        driver.get("https://school.moodledemo.net/user/profile.php")
+        driver.find_element(By.XPATH, "//a[@href='https://school.moodledemo.net/user/edit.php?id=56&returnto=profile']").click()
+        driver.find_element(By.ID, "id_firstname").clear()
+        driver.find_element(By.ID, "id_firstname").send_keys("Barbara")
+        driver.find_element(By.ID, "id_lastname").clear()
+        driver.find_element(By.ID, "id_lastname").send_keys("Gardner")
+        driver.find_element(By.ID, "id_submitbutton").click()
