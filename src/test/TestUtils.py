@@ -284,7 +284,11 @@ class TestForumPost:
 
     @staticmethod
     def check(expect):
-        result = driver.find_element(By.CSS_SELECTOR, "#user-notification p").text
+        arr = driver.find_elements(By.CSS_SELECTOR, "#user-notifications p")
+        if len(arr) > 0:
+            result = arr[0].text
+        else:
+            result = ""
         return result == expect
     
     @staticmethod
@@ -303,7 +307,8 @@ class TestForumPost:
         driver.find_element(By.XPATH, "//a[@href='#collapseAddForm']").click()
         driver.find_element(By.ID, "id_subject").clear()
         driver.find_element(By.ID, "id_subject").send_keys(title)
-        driver.switch_to.frame(driver.find_element(By.ID, "id_message_ifr"))
-        driver.find_element(By.CSS_SELECTOR, "#timymce p").clear()
-        driver.find_element(By.CSS_SELECTOR, "#timymce p").send_keys(content)
+        WebDriverWait(driver, 10).until(EC.frame_to_be_available_and_switch_to_it((By.ID, "id_message_ifr")))
+        driver.find_element(By.CSS_SELECTOR, "#tinymce").clear()
+        driver.find_element(By.CSS_SELECTOR, "#tinymce").send_keys(content)
+        driver.switch_to.default_content()
         driver.find_element(By.ID, "id_submitbutton").click()

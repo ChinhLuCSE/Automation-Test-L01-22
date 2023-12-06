@@ -12,3 +12,21 @@ class ForumPostSuite(unittest.TestCase):
         content = "xyz"
         expect = "Your post was successfully added."
         self.assertTrue(TestForumPost.testCreatePost(username, password, title, content, expect))
+
+    def test_1(self):
+        """Only White Space"""
+        username = "student"
+        password = "moodle"
+        title = """    """
+        content = """    """
+        expect = ""
+        self.assertTrue(TestForumPost.testCreatePost(username, password, title, content, expect))
+
+    def test_2(self):
+        """Empty both"""
+        username = "student"
+        password = "moodle"
+        title = ""
+        content = ""
+        expect = ""
+        self.assertTrue(TestForumPost.testCreatePost(username, password, title, content, expect))
