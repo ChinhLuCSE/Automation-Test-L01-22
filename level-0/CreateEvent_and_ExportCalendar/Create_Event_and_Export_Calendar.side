@@ -1,0 +1,1258 @@
+{
+  "id": "e2859f96-4054-47b6-bab7-2292d79b84bb",
+  "version": "2.0",
+  "name": "Create_Event_and_Export_Calendar",
+  "url": "https://school.moodledemo.net",
+  "tests": [{
+    "id": "4af653f9-0dc2-4fee-8fc0-1f9e66357ac6",
+    "name": "CreateEvent1",
+    "commands": [{
+      "id": "723f1f0f-ccbd-4e46-ae4e-07cdff6c99aa",
+      "comment": "",
+      "command": "open",
+      "target": "https://school.moodledemo.net",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "165ba256-9a49-45c3-8cda-9b0063776060",
+      "comment": "",
+      "command": "click",
+      "target": "css=.langbutton",
+      "targets": [
+        ["css=.langbutton", "css:finder"],
+        ["xpath=//a[@id='lang-menu-toggle']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Vietnamese ‎(vi)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "6fb8aebd-dc5a-4384-abbe-85391ad74898",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(25)",
+      "targets": [
+        ["css=.dropdown-item:nth-child(25)", "css:finder"],
+        ["xpath=//a[contains(text(),'English ‎(en)‎')]", "xpath:link"],
+        ["xpath=//div[@id='lang-action-menu']/a[25]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/?lang=en')]", "xpath:href"],
+        ["xpath=//a[25]", "xpath:position"],
+        ["xpath=//a[contains(.,'English ‎(en)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afc0d796-8ab5-4cbd-b7b1-8aa9d4113746",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4c53be2f-76c7-404b-bedd-94f9fed8ac56",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "42793e2d-548a-4ded-aa57-5dc8725b6ad6",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860887686_28']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "student"
+    }, {
+      "id": "9907574b-333f-4915-a6e6-beb0271e8216",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "15b41f69-5b93-4774-8148-696a8838d7d0",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860887686_33']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "moodle"
+    }, {
+      "id": "a860b53c-e8fa-4cd5-863d-a4d0c2f056de",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b41eb999-c51e-4455-8321-094c0cd031be",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-menu-toggle",
+      "targets": [
+        ["id=user-menu-toggle", "id"],
+        ["css=#user-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c8b4b8fb-92b8-4ff1-84c3-cb8e7b4571a0",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Calendar",
+      "targets": [
+        ["linkText=Calendar", "linkText"],
+        ["css=#carousel-item-main > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Calendar')]", "xpath:link"],
+        ["xpath=//div[@id='carousel-item-main']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/calendar/view.php?view=month')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Calendar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "afff3602-ea1f-496a-9f39-1799ae4d27c7",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'New event')]",
+      "targets": [
+        ["css=.float-sm-right", "css:finder"],
+        ["xpath=//div[@id='calendar-month-657056320ec6165705631bbf808-1']/div/button", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'New event')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "2c5750b6-e848-48e5-bbaf-5febba2028a5",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860914458_206']/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "50963e97-463c-4149-9af1-c09a14449c09",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860914458_206']/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": "title"
+    }, {
+      "id": "c837f8dd-04a5-45f2-99b7-a1fd2605923b",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Save')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701860914458_297", "id"],
+        ["css=#yui_3_18_1_1_1701860914458_297", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701860914458_297']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860914458_298']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "d332fa67-ed47-4619-8ad9-cab862fcc73c",
+    "name": "CreateEvent2",
+    "commands": [{
+      "id": "fd5be64d-f634-41dd-a32d-bdf5241f4692",
+      "comment": "",
+      "command": "open",
+      "target": "https://school.moodledemo.net",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "9a6d3e25-8770-4f80-bfd5-5e4288b388c6",
+      "comment": "",
+      "command": "click",
+      "target": "css=.langbutton",
+      "targets": [
+        ["css=.langbutton", "css:finder"],
+        ["xpath=//a[@id='lang-menu-toggle']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Vietnamese ‎(vi)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9a48532c-99e6-4ff6-8693-b6a31e0b245f",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(25)",
+      "targets": [
+        ["css=.dropdown-item:nth-child(25)", "css:finder"],
+        ["xpath=//a[contains(text(),'English ‎(en)‎')]", "xpath:link"],
+        ["xpath=//div[@id='lang-action-menu']/a[25]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/?lang=en')]", "xpath:href"],
+        ["xpath=//a[25]", "xpath:position"],
+        ["xpath=//a[contains(.,'English ‎(en)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ca349068-6599-49fe-b402-510077e5e8be",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "289f59eb-1d8c-404a-9066-ca612697e9a3",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e0565736-14e2-48ca-9bf6-89569a68f146",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860887686_28']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "student"
+    }, {
+      "id": "65614446-835c-4fab-bc78-8cf292a936f2",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "07623098-9d10-49c9-8029-2063588f0f25",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860887686_33']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "moodle"
+    }, {
+      "id": "71eca79f-1343-47fd-9f88-5db438bb4fa5",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92041b21-6183-446d-963e-f71ec286f9d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-menu-toggle",
+      "targets": [
+        ["id=user-menu-toggle", "id"],
+        ["css=#user-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d418986-a5cb-4382-a0ac-68397d2f8e7b",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Calendar",
+      "targets": [
+        ["linkText=Calendar", "linkText"],
+        ["css=#carousel-item-main > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Calendar')]", "xpath:link"],
+        ["xpath=//div[@id='carousel-item-main']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/calendar/view.php?view=month')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Calendar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "99aeddf2-2a77-4d7a-b464-262dc102247f",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'New event')]",
+      "targets": [
+        ["css=.float-sm-right", "css:finder"],
+        ["xpath=//div[@id='calendar-month-657056320ec6165705631bbf808-1']/div/button", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'New event')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb6bfb3f-631f-4c0b-a476-98a54108f592",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860914458_206']/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "19c7db91-1df9-4fdd-bd75-f6be19b0db82",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860914458_206']/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": "title"
+    }, {
+      "id": "f75e5a6a-a079-44a3-bfd9-f1603d80ec0d",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Show more...",
+      "targets": [
+        ["id=yui_3_18_1_1_1701861323018_286", "id"],
+        ["linkText=Show more...", "linkText"],
+        ["css=#yui_3_18_1_1_1701861323018_286", "css:finder"],
+        ["xpath=//a[contains(text(),'Show more...')]", "xpath:link"],
+        ["xpath=//a[@id='yui_3_18_1_1_1701861323018_286']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701861323018_287']/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[51]", "xpath:href"],
+        ["xpath=//fieldset/div[2]/div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Show more...')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "a3b8eff3-b120-4157-a456-9c3c4210e57a",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_location",
+      "targets": [
+        ["id=id_location", "id"],
+        ["name=location", "name"],
+        ["css=#id_location", "css:finder"],
+        ["xpath=//input[@id='id_location']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701861323018_299']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "fd6a9ebf-e2e6-481e-9823-e0033989cc44",
+      "comment": "",
+      "command": "type",
+      "target": "id=id_location",
+      "targets": [
+        ["id=id_location", "id"],
+        ["name=location", "name"],
+        ["css=#id_location", "css:finder"],
+        ["xpath=//input[@id='id_location']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701861323018_299']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/div[2]/input", "xpath:position"]
+      ],
+      "value": "Bach Khoa"
+    }, {
+      "id": "6b56c496-796e-49e9-842f-a68a8bd38b86",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Save')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701860914458_297", "id"],
+        ["css=#yui_3_18_1_1_1701860914458_297", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701860914458_297']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860914458_298']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "fd018f6f-94a7-459b-99ee-4bf32fe2208c",
+    "name": "CreateEvent4",
+    "commands": [{
+      "id": "c7f511bb-16ca-4692-9664-07c8e8a08ab9",
+      "comment": "",
+      "command": "open",
+      "target": "https://school.moodledemo.net",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "22b4bab8-501f-4d01-9ab1-f65f836934f8",
+      "comment": "",
+      "command": "click",
+      "target": "css=.langbutton",
+      "targets": [
+        ["css=.langbutton", "css:finder"],
+        ["xpath=//a[@id='lang-menu-toggle']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Vietnamese ‎(vi)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1f28b366-a575-4eca-8a8f-277da4f6bc65",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(25)",
+      "targets": [
+        ["css=.dropdown-item:nth-child(25)", "css:finder"],
+        ["xpath=//a[contains(text(),'English ‎(en)‎')]", "xpath:link"],
+        ["xpath=//div[@id='lang-action-menu']/a[25]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/?lang=en')]", "xpath:href"],
+        ["xpath=//a[25]", "xpath:position"],
+        ["xpath=//a[contains(.,'English ‎(en)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "9ff94233-86b3-4d9c-a522-cdc8337c0d1f",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "1d9d6a91-34ec-472b-9563-b15ef674b7a7",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "98fbba6d-30fe-4a82-8918-a879c69d1dd6",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860887686_28']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "student"
+    }, {
+      "id": "f30b9632-ecdf-4eab-ad57-484bbfc6da66",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "997bee5f-24b9-45ff-bce2-0f71c9646266",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860887686_33']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "moodle"
+    }, {
+      "id": "309b5c70-5f4f-44d9-9742-9a9033758375",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4e09222c-db54-4bae-9907-e2a4dd297a81",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-menu-toggle",
+      "targets": [
+        ["id=user-menu-toggle", "id"],
+        ["css=#user-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "b59aaef6-a375-4aae-86ef-a989e95686fc",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Calendar",
+      "targets": [
+        ["linkText=Calendar", "linkText"],
+        ["css=#carousel-item-main > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Calendar')]", "xpath:link"],
+        ["xpath=//div[@id='carousel-item-main']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/calendar/view.php?view=month')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Calendar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "aade0dd3-bd98-4a8f-b5ba-de8843aa4f2a",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'New event')]",
+      "targets": [
+        ["css=.float-sm-right", "css:finder"],
+        ["xpath=//div[@id='calendar-month-65705b1a3e34765705b1a0ef3f8-1']/div/button", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'New event')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "359c8d7f-ffcd-4ef9-b943-561e69b025ef",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//div[5]/div[2]/div/div/div/button/span",
+      "targets": [
+        ["css=#yui_3_18_1_1_1701862170414_285 > span", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701862170414_285']/span", "xpath:idRelative"],
+        ["xpath=//div[5]/div[2]/div/div/div/button/span", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "ebc36689-4db9-4818-b01b-c1fb452f14a7",
+    "name": "ExportCalendar1",
+    "commands": [{
+      "id": "a35f474a-931d-48b6-9725-805960db8d16",
+      "comment": "",
+      "command": "open",
+      "target": "https://school.moodledemo.net",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "8d2f8bd4-33e7-44e9-b304-40af63f817c3",
+      "comment": "",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [
+        ["id=lang-menu-toggle", "id"],
+        ["css=#lang-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='lang-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Vietnamese ‎(vi)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0d2e9972-e9be-4c96-b56b-18d581ac5bab",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(25)",
+      "targets": [
+        ["css=.dropdown-item:nth-child(25)", "css:finder"],
+        ["xpath=//a[contains(text(),'English ‎(en)‎')]", "xpath:link"],
+        ["xpath=//div[@id='lang-action-menu']/a[25]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/?lang=en')]", "xpath:href"],
+        ["xpath=//a[25]", "xpath:position"],
+        ["xpath=//a[contains(.,'English ‎(en)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "3299164e-bc2f-4290-9d1a-65b39f5aa37a",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "0509cc41-e84f-442b-830a-74cee2e3cce8",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "073243cd-9457-4f36-854b-917cdc59607d",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860887686_28']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "student"
+    }, {
+      "id": "097e461d-1e91-45c4-88a2-29cee2cb22e1",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "3bd8db18-ba71-4f84-9c46-36a46ed89d69",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701861798945_28']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "moodle"
+    }, {
+      "id": "ada9654e-ea10-4f6d-be38-29e9bca7e8bd",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d06195a2-7e18-40b5-81e5-b1e01aeeb824",
+      "comment": "",
+      "command": "click",
+      "target": "css=.userpicture",
+      "targets": [
+        ["css=.userpicture", "css:finder"],
+        ["xpath=//img[contains(@src,'https://school.moodledemo.net/pluginfile.php/411/user/icon/boost/f2?rev=61748')]", "xpath:img"],
+        ["xpath=//a[@id='user-menu-toggle']/span/span/span/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c809b2bd-a534-4441-a3b4-dc7b4379cf80",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Calendar",
+      "targets": [
+        ["linkText=Calendar", "linkText"],
+        ["css=#carousel-item-main > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Calendar')]", "xpath:link"],
+        ["xpath=//div[@id='carousel-item-main']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/calendar/view.php?view=month')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Calendar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68ec2f4b-37c0-419f-a01c-4935a99b1969",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Import or export calendars",
+      "targets": [
+        ["linkText=Import or export calendars", "linkText"],
+        ["css=.footer-link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Import or export calendars')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div/div/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/calendar/managesubscriptions.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Import or export calendars')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "886ceec7-a466-4215-8e36-9d727b66240c",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Export calendar')]",
+      "targets": [
+        ["id=single_button657059bc38d128", "id"],
+        ["css=#single_button657059bc38d128", "css:finder"],
+        ["xpath=//button[@id='single_button657059bc38d128']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Export calendar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "68937f31-61db-46a5-bdd6-76fbce90f6fc",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//label[contains(.,'Events related to categories')]",
+      "targets": [
+        ["css=#yui_3_18_1_1_1701861822279_29 > .form-check-inline:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701861822279_29']/label[2]", "xpath:idRelative"],
+        ["xpath=//label[2]", "xpath:position"],
+        ["xpath=//label[contains(.,'Events related to categories')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "298db7fd-9147-44e5-81f1-424210fcf8fe",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//label[contains(.,'This month')]",
+      "targets": [
+        ["css=#yui_3_18_1_1_1701861822279_35 > .form-check-inline:nth-child(4)", "css:finder"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701861822279_35']/label[2]", "xpath:idRelative"],
+        ["xpath=//div[4]/div[2]/fieldset/div/label[2]", "xpath:position"],
+        ["xpath=//label[contains(.,'This month')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "78f99ba3-e7cd-4f4e-84f5-83a01cd552ff",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_export",
+      "targets": [
+        ["id=id_export", "id"],
+        ["name=export", "name"],
+        ["css=#id_export", "css:finder"],
+        ["xpath=//input[@id='id_export']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_group_1']/div[2]/fieldset/div/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "cae76c11-b331-4224-b5eb-bb0a710fd5e7",
+    "name": "ExportCalendar2",
+    "commands": [{
+      "id": "defc5a3e-3207-400e-9947-1148dcb6d646",
+      "comment": "",
+      "command": "open",
+      "target": "https://school.moodledemo.net",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c882f925-b9ac-47c7-b853-5ed28eace708",
+      "comment": "",
+      "command": "click",
+      "target": "id=lang-menu-toggle",
+      "targets": [
+        ["id=lang-menu-toggle", "id"],
+        ["css=#lang-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='lang-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[3]/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[5]", "xpath:href"],
+        ["xpath=//div[3]/div/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Vietnamese ‎(vi)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "e03d41b3-82d7-4a98-94f9-3e3444133140",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(25)",
+      "targets": [
+        ["css=.dropdown-item:nth-child(25)", "css:finder"],
+        ["xpath=//a[contains(text(),'English ‎(en)‎')]", "xpath:link"],
+        ["xpath=//div[@id='lang-action-menu']/a[25]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/?lang=en')]", "xpath:href"],
+        ["xpath=//a[25]", "xpath:position"],
+        ["xpath=//a[contains(.,'English ‎(en)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "4d99ece6-bb2e-454e-9fd1-76b5964eb9ad",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "24fe71a3-eba3-4dfa-9cd5-efe3b0541595",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "1827df53-51cd-418e-b539-de8e8ae7f3d4",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860887686_28']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "student"
+    }, {
+      "id": "a2c48013-b040-417a-95bb-58c8d53f2a7e",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "cb375da3-c51c-41ad-8b04-03f0764b453a",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701861798945_28']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "moodle"
+    }, {
+      "id": "d1388b35-2dea-4e7d-808c-e1c7abf4aa5a",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "28fec9b9-36c1-4903-a2f0-28fb038d5b9a",
+      "comment": "",
+      "command": "click",
+      "target": "css=.userpicture",
+      "targets": [
+        ["css=.userpicture", "css:finder"],
+        ["xpath=//img[contains(@src,'https://school.moodledemo.net/pluginfile.php/411/user/icon/boost/f2?rev=61748')]", "xpath:img"],
+        ["xpath=//a[@id='user-menu-toggle']/span/span/span/img", "xpath:idRelative"],
+        ["xpath=//img", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "77315f7c-b6c2-46ef-8dc8-762ff7b294cb",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Calendar",
+      "targets": [
+        ["linkText=Calendar", "linkText"],
+        ["css=#carousel-item-main > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Calendar')]", "xpath:link"],
+        ["xpath=//div[@id='carousel-item-main']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/calendar/view.php?view=month')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Calendar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b83354e5-9dee-4eff-ba73-bfbd221ee8d1",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Import or export calendars",
+      "targets": [
+        ["linkText=Import or export calendars", "linkText"],
+        ["css=.footer-link > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Import or export calendars')]", "xpath:link"],
+        ["xpath=//section[@id='region-main']/div/div/div[2]/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/calendar/managesubscriptions.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Import or export calendars')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "ba877e39-4910-4525-959b-f7428e3d0e23",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Export calendar')]",
+      "targets": [
+        ["id=single_button657059bc38d128", "id"],
+        ["css=#single_button657059bc38d128", "css:finder"],
+        ["xpath=//button[@id='single_button657059bc38d128']", "xpath:attributes"],
+        ["xpath=//section[@id='region-main']/div/div/div[2]/form/button", "xpath:idRelative"],
+        ["xpath=//div[2]/form/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Export calendar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b96538a7-9b77-4302-86f3-58c0b4ddf3e2",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_export",
+      "targets": [
+        ["id=id_export", "id"],
+        ["name=export", "name"],
+        ["css=#id_export", "css:finder"],
+        ["xpath=//input[@id='id_export']", "xpath:attributes"],
+        ["xpath=//div[@id='fgroup_id_group_1']/div[2]/fieldset/div/div[2]/span/input", "xpath:idRelative"],
+        ["xpath=//div[2]/span/input", "xpath:position"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "bfb1b2bd-d8aa-420f-8c42-9906ba7e8749",
+    "name": "CreateEvent3",
+    "commands": [{
+      "id": "bf559921-d883-462f-b9e8-37e0a3d86b55",
+      "comment": "",
+      "command": "open",
+      "target": "https://school.moodledemo.net",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "ae640f7e-c6ef-491e-afad-5a297ae096db",
+      "comment": "",
+      "command": "click",
+      "target": "css=.langbutton",
+      "targets": [
+        ["css=.langbutton", "css:finder"],
+        ["xpath=//a[@id='lang-menu-toggle']/span", "xpath:idRelative"],
+        ["xpath=//div[3]/div/a/span", "xpath:position"],
+        ["xpath=//span[contains(.,'Vietnamese ‎(vi)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "075ecd7a-f63e-4709-b4fc-180c2e4cbb79",
+      "comment": "",
+      "command": "click",
+      "target": "css=.dropdown-item:nth-child(25)",
+      "targets": [
+        ["css=.dropdown-item:nth-child(25)", "css:finder"],
+        ["xpath=//a[contains(text(),'English ‎(en)‎')]", "xpath:link"],
+        ["xpath=//div[@id='lang-action-menu']/a[25]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/?lang=en')]", "xpath:href"],
+        ["xpath=//a[25]", "xpath:position"],
+        ["xpath=//a[contains(.,'English ‎(en)‎')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "b3c84a8d-9bd0-4274-aec2-80621e918615",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Log in",
+      "targets": [
+        ["linkText=Log in", "linkText"],
+        ["css=.login > a", "css:finder"],
+        ["xpath=//a[contains(text(),'Log in')]", "xpath:link"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/span/a", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/login/index.php')]", "xpath:href"],
+        ["xpath=//span/a", "xpath:position"],
+        ["xpath=//a[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "93b32ee4-2cc0-42b5-aac5-e94023650aa5",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "d370c9ae-8364-434f-9ae8-40e8909a3232",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860887686_28']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "student"
+    }, {
+      "id": "ec3bad51-4d99-4658-bd6f-197cac312667",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "e42836e0-02d0-4f4d-ba6b-8381a61747ac",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860887686_33']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "moodle"
+    }, {
+      "id": "cbc808c6-ed2f-4b04-ae78-04fdfbfa11c8",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Log in')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "92ca5296-57ba-4af2-83d6-28a3ff6c3988",
+      "comment": "",
+      "command": "click",
+      "target": "id=user-menu-toggle",
+      "targets": [
+        ["id=user-menu-toggle", "id"],
+        ["css=#user-menu-toggle", "css:finder"],
+        ["xpath=//a[@id='user-menu-toggle']", "xpath:attributes"],
+        ["xpath=//div[@id='usernavigation']/div[5]/div/div/a", "xpath:idRelative"],
+        ["xpath=(//a[contains(@href, '#')])[7]", "xpath:href"],
+        ["xpath=//div[5]/div/div/a", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "dc16be39-f9fe-4fe1-8d2a-3d37bc3161da",
+      "comment": "",
+      "command": "click",
+      "target": "linkText=Calendar",
+      "targets": [
+        ["linkText=Calendar", "linkText"],
+        ["css=#carousel-item-main > .dropdown-item:nth-child(3)", "css:finder"],
+        ["xpath=//a[contains(text(),'Calendar')]", "xpath:link"],
+        ["xpath=//div[@id='carousel-item-main']/a[3]", "xpath:idRelative"],
+        ["xpath=//a[contains(@href, 'https://school.moodledemo.net/calendar/view.php?view=month')]", "xpath:href"],
+        ["xpath=//a[3]", "xpath:position"],
+        ["xpath=//a[contains(.,'Calendar')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "499d2f31-937b-4544-af53-7cd42c0eac6d",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'New event')]",
+      "targets": [
+        ["css=.float-sm-right", "css:finder"],
+        ["xpath=//div[@id='calendar-month-657056320ec6165705631bbf808-1']/div/button", "xpath:idRelative"],
+        ["xpath=//section/div/div/div/div/div/button", "xpath:position"],
+        ["xpath=//button[contains(.,'New event')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }, {
+      "id": "d91ad340-5c3d-48e0-9d57-6335cce9c289",
+      "comment": "",
+      "command": "click",
+      "target": "id=id_name",
+      "targets": [
+        ["id=id_name", "id"],
+        ["name=name", "name"],
+        ["css=#id_name", "css:finder"],
+        ["xpath=//input[@id='id_name']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860914458_206']/input", "xpath:idRelative"],
+        ["xpath=//div/div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "33addf25-87d5-4365-ba9b-7dde9276bf04",
+      "comment": "",
+      "command": "click",
+      "target": "xpath=//button[contains(.,'Save')]",
+      "targets": [
+        ["id=yui_3_18_1_1_1701860914458_297", "id"],
+        ["css=#yui_3_18_1_1_1701860914458_297", "css:finder"],
+        ["xpath=//button[@id='yui_3_18_1_1_1701860914458_297']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701860914458_298']/button", "xpath:idRelative"],
+        ["xpath=//div[2]/div/div/div[3]/button", "xpath:position"],
+        ["xpath=//button[contains(.,'Save')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }],
+  "suites": [{
+    "id": "a20d8544-69d7-453c-9060-c043ef5f4747",
+    "name": "CreateEventSuite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["4af653f9-0dc2-4fee-8fc0-1f9e66357ac6", "d332fa67-ed47-4619-8ad9-cab862fcc73c", "bfb1b2bd-d8aa-420f-8c42-9906ba7e8749", "fd018f6f-94a7-459b-99ee-4bf32fe2208c"]
+  }, {
+    "id": "c0ca2fa5-63df-4b0c-9fcf-217701752b0b",
+    "name": "ExportCalendarSuite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["ebc36689-4db9-4818-b01b-c1fb452f14a7", "cae76c11-b331-4224-b5eb-bb0a710fd5e7"]
+  }],
+  "urls": ["https://school.moodledemo.net/"],
+  "plugins": []
+}
