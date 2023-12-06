@@ -3,8 +3,6 @@
     </h2>
 </div>
 
-![image](./selenium.gif)
-
 ## 📦 Installation
 
 ```
