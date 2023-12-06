@@ -1,0 +1,2 @@
+event_to_export: Events related to categories
+time_period: This month

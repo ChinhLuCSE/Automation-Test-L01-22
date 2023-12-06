@@ -1,0 +1,2 @@
+event_to_export: All events
+time_period: This week

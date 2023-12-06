@@ -1,0 +1,2 @@
+event_to_export: Events related to courses
+time_period: Recent and next 60 days
