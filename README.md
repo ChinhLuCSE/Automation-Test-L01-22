@@ -6,8 +6,8 @@
 ## 📦 Installation
 
 ```
-git clone https://github.com/ChinhLuCSE/Automation-Test-L01.22.git
-cd Automation-Test-L01.22
+git clone https://github.com/ChinhLuCSE/Automation-Test-L01-22.git
+cd Automation-Test-L01-22
 python3 -m venv env
 source env/bin/activate
 pip install -r ./requirements.txt
