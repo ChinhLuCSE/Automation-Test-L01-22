@@ -312,3 +312,68 @@ class TestForumPost:
         driver.find_element(By.CSS_SELECTOR, "#tinymce").send_keys(content)
         driver.switch_to.default_content()
         driver.find_element(By.ID, "id_submitbutton").click()
+#Author: Nguyễn Anh Khoa - 2011424
+class TestGlobalSearch:
+     
+     
+      @staticmethod
+      def testGlobalSearch(query,title,expect):
+        # goToLoginPage()
+        # TestUtil.login("teacher", "moodle")
+        try:
+            driver.get("https://school.moodledemo.net/login/index.php")
+            driver.find_element(By.ID, "username").clear()
+            driver.find_element(By.ID, "username").send_keys("student")
+            driver.find_element(By.ID, "password").clear()
+            driver.find_element(By.ID, "password").send_keys("moodle")
+            driver.find_element(By.ID, "loginbtn").click()
+        except Exception:
+            pass
+
+        driver.get("https://school.moodledemo.net/search/index.php/search/index.php")
+        driver.set_window_size(1440, 805)
+        driver.find_element(By.ID, "id_q").click()
+        driver.find_element(By.ID, "id_q").send_keys(query)
+        driver.find_element(By.ID, "collapseElement-1").click()
+        driver.find_element(By.XPATH, "//input[@id='id_title']").click()
+        driver.find_element(By.ID, "id_title").send_keys(title)
+        driver.find_element(By.XPATH, "//span[contains(.,'▼')]").click()
+        driver.find_element(By.XPATH, "(//li[@id=''])[3]").click()
+        
+        driver.find_element(By.ID, "page").click()
+        time.sleep(5)
+        driver.find_element(By.ID, "id_timestart_label").click()
+        driver.find_element(By.ID, "id_timestart_enabled").click()
+        driver.find_element(By.ID, "id_timestart_month").click()
+        dropdown = driver.find_element(By.ID, "id_timestart_month")
+        dropdown.find_element(By.XPATH, "//option[. = 'January']").click()
+        driver.find_element(By.ID, "id_timestart_year").click()
+        dropdown = driver.find_element(By.ID, "id_timestart_year")
+        dropdown.find_element(By.XPATH, "//option[. = '2009']").click()
+        driver.find_element(By.ID, "id_timeend_enabled").click()
+        driver.find_element(By.ID, "id_timeend_month").click()
+        
+        
+        driver.execute_script("window.scrollTo(0,87)")
+        driver.find_element(By.ID, "id_submitbutton").click()
+        driver.execute_script("window.scrollTo(0,61)")
+
+        time.sleep(3)
+        return TestGlobalSearch.check(expect)
+
+        
+      @staticmethod
+      def check(expect):
+        
+        if (expect=="Success"):
+            if (driver.find_element(By.XPATH,"//a[contains(.,'Aristotle')]")) :
+                return True
+        elif (expect=="No Result"):
+            if (driver.find_element(By.XPATH,"//section[@id='region-main']/div/div")):
+                return True
+        elif (expect=="Require"):
+            if (driver.find_element(By.ID,"id_error_q")):
+                return True
+        else: return False
+        
+        

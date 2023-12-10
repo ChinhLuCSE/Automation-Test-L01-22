@@ -23,6 +23,9 @@ def main(argv):
         elif argv[1] == "ForumPostSuite":
             from ForumPostSuite import ForumPostSuite
             getAndTest(ForumPostSuite)
+        elif argv[1] == "GlobalSearchSuite":
+            from GlobalSearchSuite import GlobalSearchSuite
+            getAndTest(GlobalSearchSuite)
         else:
             printUsage()
     else:
