@@ -26,6 +26,9 @@ def main(argv):
         elif argv[1] == "GlobalSearchSuite":
             from GlobalSearchSuite import GlobalSearchSuite
             getAndTest(GlobalSearchSuite)
+        elif argv[1] == "AssignmentSuite":
+            from AssignmentSuite import AssignmentSuite
+            getAndTest(AssignmentSuite)
         else:
             printUsage()
     else:
