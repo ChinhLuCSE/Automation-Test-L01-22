@@ -376,4 +376,43 @@ class TestGlobalSearch:
                 return True
         else: return False
         
+class TestAssignment:
+    @staticmethod
+    def test(page, assignment, content):
+        goToLoginPagesAnd()
+
+        TestUtil.login("student", "moodle")
+
+        input_str = """ page: %s
+assignment: %s
+content: %s
+""" % (
+            page,
+            assignment,
+            content,
+        )
+
+        TestUtil.makeSourcePath(input_str, num)
         
+        driver.find_element(By.XPATH, "{page}").click()
+        driver.find_element(By.XPATH, "{assignment}").click()
+        
+        if driver.find_elements(By.XPATH, "//button[contains(.,'Add submission')]"):
+            driver.find_element(By.XPATH, "//button[contains(.,'Add submission')]").click()
+            driver.switch_to.frame(1)
+            driver.find_element(By.CSS_SELECTOR, "html").click()
+            driver.find_element(By.ID, "tinymce").clear()
+            driver.find_element(By.ID, "tinymce").send_keys("{content}")
+            driver.find_element(By.ID, "id_submitbutton").click()
+            dest = open(os.path.join(soldir, str(num) + ".txt"), "w")
+            dest.write("Successfully submit assignment")
+            
+        elif driver.find_elements(By.XPATH, "//button[contains(.,'Remove submission')]"):
+            driver.find_element(By.XPATH, "//button[contains(.,'Remove submission')]").click()
+            driver.find_element(By.XPATH, "//button[contains(.,'Continue')]").click()
+            dest = open(os.path.join(soldir, str(num) + ".txt"), "w")
+            dest.write("Successfully remove submission")
+        
+        dest = open(os.path.join(SOL_DIR, str(num) + ".txt"), "r")
+        line = dest.read()
+        return line == expect
