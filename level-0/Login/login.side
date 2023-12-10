@@ -1,0 +1,239 @@
+{
+  "id": "37fab1ec-954e-4752-929e-679291b2465d",
+  "version": "2.0",
+  "name": "login",
+  "url": "https://school.moodledemo.net/login/index.php",
+  "tests": [{
+    "id": "5fdd81d7-24c8-4b4b-96c5-2cf03a733d3a",
+    "name": "login1",
+    "commands": [{
+      "id": "5fd722b7-9c6e-4e77-bc9b-060a1ac12b9c",
+      "comment": "",
+      "command": "open",
+      "target": "/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "91eb6ff9-6163-43b0-b756-95cbb41a7120",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x805",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "de9fb976-14f6-46f7-8e2b-08b79dd7b1f3",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "09b25bf0-4994-4750-a601-15c1b0997583",
+      "comment": "",
+      "command": "type",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701606327817_28']/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": "dung"
+    }, {
+      "id": "8faa401a-bc2d-4adf-b60a-6c848c627444",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "60642800-fe92-42a4-bbda-66cafed3cc95",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701606327817_33']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "12345"
+    }, {
+      "id": "58c0d733-5bd7-4185-b07b-2043ad52f008",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Đăng nhập')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "5f0e488c-882c-4cda-a5e3-14b1a4abb79a",
+    "name": "login2",
+    "commands": [{
+      "id": "86d50325-c52a-4120-9f65-f38f44f1ad3d",
+      "comment": "",
+      "command": "open",
+      "target": "https://school.moodledemo.net/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "c697e4f9-9bf1-4dae-8c86-085afa999d54",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x805",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "4d00296f-ffb9-4573-9136-4069e41b756c",
+      "comment": "",
+      "command": "click",
+      "target": "id=username",
+      "targets": [
+        ["id=username", "id"],
+        ["name=username", "name"],
+        ["css=#username", "css:finder"],
+        ["xpath=//input[@id='username']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div/input", "xpath:idRelative"],
+        ["xpath=//div/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "c56f7f9d-17ff-42ba-8630-3515c9e85294",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "382c4bd4-e9eb-491a-b05b-5a65db763e37",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701606391241_33']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "moodle"
+    }, {
+      "id": "59cd97b7-ad6c-4a67-af7a-7228032ba7d9",
+      "comment": "",
+      "command": "click",
+      "target": "id=loginbtn",
+      "targets": [
+        ["id=loginbtn", "id"],
+        ["css=#loginbtn", "css:finder"],
+        ["xpath=//button[@id='loginbtn']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[3]/button", "xpath:idRelative"],
+        ["xpath=//button", "xpath:position"],
+        ["xpath=//button[contains(.,'Đăng nhập')]", "xpath:innerText"]
+      ],
+      "value": ""
+    }]
+  }, {
+    "id": "e41b6c77-4b56-4b31-b111-a292eed96a48",
+    "name": "login3",
+    "commands": [{
+      "id": "4a2e2075-a6bc-457e-83ec-e362f95f3a69",
+      "comment": "",
+      "command": "open",
+      "target": "https://school.moodledemo.net/login/index.php",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "04696eeb-3264-4b4e-bb95-eb067b4f45d2",
+      "comment": "",
+      "command": "setWindowSize",
+      "target": "1440x805",
+      "targets": [],
+      "value": ""
+    }, {
+      "id": "66f1d6b7-be4a-4b74-8cec-9ad393682f21",
+      "comment": "",
+      "command": "click",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//form[@id='login']/div[2]/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": ""
+    }, {
+      "id": "0c5e927c-ebdf-48c8-82b2-bf38b1319d22",
+      "comment": "",
+      "command": "type",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701606676427_28']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "student"
+    }, {
+      "id": "79569080-8371-4f49-8a59-41c0f7006bff",
+      "comment": "",
+      "command": "sendKeys",
+      "target": "id=password",
+      "targets": [
+        ["id=password", "id"],
+        ["name=password", "name"],
+        ["css=#password", "css:finder"],
+        ["xpath=//input[@id='password']", "xpath:attributes"],
+        ["xpath=//div[@id='yui_3_18_1_1_1701606676427_28']/input", "xpath:idRelative"],
+        ["xpath=//div[2]/input", "xpath:position"]
+      ],
+      "value": "${KEY_ENTER}"
+    }]
+  }],
+  "suites": [{
+    "id": "864c66da-7e93-4902-93fe-0dccd6de8bc2",
+    "name": "Default Suite",
+    "persistSession": false,
+    "parallel": false,
+    "timeout": 300,
+    "tests": ["5fdd81d7-24c8-4b4b-96c5-2cf03a733d3a"]
+  }],
+  "urls": ["https://school.moodledemo.net/", "https://school.moodledemo.net/login/index.php"],
+  "plugins": []
+}
