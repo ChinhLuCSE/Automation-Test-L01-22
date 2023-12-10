@@ -23,6 +23,9 @@ def main(argv):
         elif argv[1] == "ForumPostSuite":
             from ForumPostSuite import ForumPostSuite
             getAndTest(ForumPostSuite)
+        elif argv[1] == "AssignmentSuite":
+            from AssignmentSuite import AssignmentSuite
+            getAndTest(AssignmentSuite)
         else:
             printUsage()
     else:
@@ -52,6 +55,7 @@ def printUsage():
     print("python3 run.py test LoginSuite")
     print("python3 run.py test ChangePasswordSuite")
     print("python3 run.py test EditProfileSuite")
+    print("python3 run.py test AssignmentsSuite")
 
 
 if __name__ == "__main__":
